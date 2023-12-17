@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="signInViewController" customModule="snapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snapchat Clone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVA-M0-lHH">
+                                <rect key="frame" x="67" y="123" width="259" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vdh-8L-PsH">
+                                <rect key="frame" x="41" y="194" width="310" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SiS-40-Fnt">
+                                <rect key="frame" x="41" y="245" width="310" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmT-Oe-E3l">
+                                <rect key="frame" x="41" y="297" width="310" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EJ-4y-PeV">
+                                <rect key="frame" x="41" y="364" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş"/>
+                                <connections>
+                                    <action selector="signInActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QSw-D1-ZbA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYp-81-v4s">
+                                <rect key="frame" x="275" y="364" width="76" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydol"/>
+                                <connections>
+                                    <action selector="signUpActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ak-sd-KUJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SiS-40-Fnt" firstAttribute="trailing" secondItem="mmT-Oe-E3l" secondAttribute="trailing" id="1pW-0g-e3n"/>
+                            <constraint firstItem="4EJ-4y-PeV" firstAttribute="baseline" secondItem="eYp-81-v4s" secondAttribute="baseline" id="32d-kR-g1t"/>
+                            <constraint firstItem="4EJ-4y-PeV" firstAttribute="top" secondItem="mmT-Oe-E3l" secondAttribute="bottom" constant="33" id="9vO-67-h9R"/>
+                            <constraint firstItem="mmT-Oe-E3l" firstAttribute="trailing" secondItem="eYp-81-v4s" secondAttribute="trailing" id="GkA-fQ-Nav"/>
+                            <constraint firstItem="mmT-Oe-E3l" firstAttribute="leading" secondItem="4EJ-4y-PeV" secondAttribute="leading" id="KUM-BU-2h9"/>
+                            <constraint firstItem="SiS-40-Fnt" firstAttribute="leading" secondItem="mmT-Oe-E3l" secondAttribute="leading" id="NQq-nD-lSO"/>
+                            <constraint firstItem="SiS-40-Fnt" firstAttribute="top" secondItem="vdh-8L-PsH" secondAttribute="bottom" constant="17" id="O0j-AY-vJ1"/>
+                            <constraint firstItem="iVA-M0-lHH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="cUm-ZH-XrP"/>
+                            <constraint firstItem="iVA-M0-lHH" firstAttribute="centerX" secondItem="vdh-8L-PsH" secondAttribute="centerX" id="eCn-NK-ngM"/>
+                            <constraint firstItem="mmT-Oe-E3l" firstAttribute="top" secondItem="SiS-40-Fnt" secondAttribute="bottom" constant="18" id="i3f-dE-EPt"/>
+                            <constraint firstItem="vdh-8L-PsH" firstAttribute="trailing" secondItem="SiS-40-Fnt" secondAttribute="trailing" id="lyx-ez-dI0"/>
+                            <constraint firstItem="vdh-8L-PsH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="mL0-gt-Slk"/>
+                            <constraint firstItem="vdh-8L-PsH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qen-Ov-fQm"/>
+                            <constraint firstItem="vdh-8L-PsH" firstAttribute="top" secondItem="iVA-M0-lHH" secondAttribute="bottom" constant="28" id="t44-na-auH"/>
+                            <constraint firstItem="vdh-8L-PsH" firstAttribute="leading" secondItem="SiS-40-Fnt" secondAttribute="leading" id="vSC-iP-k2B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KMo-Kh-bTf"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="vdh-8L-PsH" id="Bhm-5Q-01u"/>
+                        <outlet property="passwordTextField" destination="mmT-Oe-E3l" id="qCm-5y-PnQ"/>
+                        <outlet property="userNameTextField" destination="SiS-40-Fnt" id="bcS-dX-gUD"/>
+                        <segue destination="fQD-9G-nXS" kind="presentation" identifier="toHomeVC" modalPresentationStyle="overFullScreen" id="uVa-jD-Lr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="-2"/>
+        </scene>
+        <!--Yükle-->
+        <scene sceneID="Cf4-Th-BXU">
+            <objects>
+                <viewController id="jiJ-mt-8GN" customClass="uploadViewController" customModule="snapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="lNz-hv-tbw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="XQQ-8g-T2s">
+                                <rect key="frame" x="5" y="64" width="383" height="638.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XQQ-8g-T2s" secondAttribute="height" multiplier="3:5" id="MxZ-58-Xyw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDB-wF-rfq">
+                                <rect key="frame" x="123" y="707.33333333333337" width="147" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="ndx-Ig-93P"/>
+                                    <constraint firstAttribute="height" constant="48" id="p5o-jW-x1e"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Paylaş"/>
+                                <connections>
+                                    <action selector="shareActionButton:" destination="jiJ-mt-8GN" eventType="touchUpInside" id="Tf2-jU-XWa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aUL-cl-ERX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TDB-wF-rfq" firstAttribute="centerX" secondItem="XQQ-8g-T2s" secondAttribute="centerX" id="8kL-uS-cx9"/>
+                            <constraint firstItem="XQQ-8g-T2s" firstAttribute="leading" secondItem="aUL-cl-ERX" secondAttribute="leading" constant="5" id="Mba-jU-Bmf"/>
+                            <constraint firstItem="TDB-wF-rfq" firstAttribute="top" secondItem="XQQ-8g-T2s" secondAttribute="bottom" constant="5" id="baE-ld-qYX"/>
+                            <constraint firstItem="aUL-cl-ERX" firstAttribute="trailing" secondItem="XQQ-8g-T2s" secondAttribute="trailing" constant="5" id="hBe-Lh-wBe"/>
+                            <constraint firstItem="XQQ-8g-T2s" firstAttribute="top" secondItem="aUL-cl-ERX" secondAttribute="top" constant="5" id="scT-XW-xHL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Yükle" image="plus.app" catalog="system" id="yyf-EQ-VBn"/>
+                    <connections>
+                        <outlet property="uploadImageView" destination="XQQ-8g-T2s" id="3hh-AU-w1f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5NJ-Rk-Y9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760" y="742"/>
+        </scene>
+        <!--Ayarlar-->
+        <scene sceneID="cjk-CI-ugd">
+            <objects>
+                <viewController id="cxY-bK-NRo" customClass="settingViewController" customModule="snapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQg-yA-M1c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwN-yH-fQ8">
+                                <rect key="frame" x="119" y="271" width="155" height="99"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Çıkış"/>
+                                <connections>
+                                    <action selector="logoutActionButton:" destination="cxY-bK-NRo" eventType="touchUpInside" id="5CR-5h-6Lf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nsv-4L-elZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nsv-4L-elZ" firstAttribute="bottom" secondItem="AwN-yH-fQ8" secondAttribute="bottom" constant="399" id="4Ia-MB-hZ0"/>
+                            <constraint firstItem="AwN-yH-fQ8" firstAttribute="centerX" secondItem="fQg-yA-M1c" secondAttribute="centerX" id="gTF-2O-tyP"/>
+                            <constraint firstItem="AwN-yH-fQ8" firstAttribute="top" secondItem="Nsv-4L-elZ" secondAttribute="top" constant="212" id="lUT-HZ-FJe"/>
+                            <constraint firstItem="AwN-yH-fQ8" firstAttribute="leading" secondItem="Nsv-4L-elZ" secondAttribute="leading" constant="119" id="xMF-w3-7oB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ayarlar" image="person" catalog="system" id="E7T-au-Ahv"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignInVC" modalPresentationStyle="overFullScreen" id="BPS-Q6-sOx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORF-YP-Xva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="741"/>
+        </scene>
+        <!--Ana Sayfa-->
+        <scene sceneID="4K3-e9-cqa">
+            <objects>
+                <viewController id="YHF-h6-IAe" customClass="homeViewController" customModule="snapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mkc-pW-McV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5rI-mT-BRD">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="571" id="W5y-e5-mUk" customClass="FeedTableViewCell" customModule="snapchatClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="571"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W5y-e5-mUk" id="D4f-9l-C7F">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="571"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Y8-xX-4Ut">
+                                                    <rect key="frame" x="54.666666666666657" y="27" width="284" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="55" id="bCL-pm-uvi"/>
+                                                        <constraint firstAttribute="width" constant="284" id="nax-fg-c49"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="94q-2F-3eS">
+                                                    <rect key="frame" x="20" y="90" width="353" height="460"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="460" id="AEJ-7d-eYV"/>
+                                                        <constraint firstAttribute="width" constant="353" id="TWi-X1-OwS"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="353" id="W4R-IU-KXK"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1Y8-xX-4Ut" firstAttribute="top" secondItem="D4f-9l-C7F" secondAttribute="topMargin" constant="16" id="OJf-DF-fW7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="94q-2F-3eS" secondAttribute="bottom" constant="10" id="QgA-TA-Jw7"/>
+                                                <constraint firstItem="94q-2F-3eS" firstAttribute="top" secondItem="1Y8-xX-4Ut" secondAttribute="bottom" constant="8" id="Stu-wG-hl4"/>
+                                                <constraint firstItem="1Y8-xX-4Ut" firstAttribute="centerX" secondItem="94q-2F-3eS" secondAttribute="centerX" id="ZDL-Rh-Q6t"/>
+                                                <constraint firstItem="1Y8-xX-4Ut" firstAttribute="centerX" secondItem="D4f-9l-C7F" secondAttribute="centerX" id="nxG-Yf-K5q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="snapImageView" destination="94q-2F-3eS" id="tvl-sC-Yoa"/>
+                                            <outlet property="snapUserNameLabel" destination="1Y8-xX-4Ut" id="L8h-84-iud"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M6O-s6-93N"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5rI-mT-BRD" firstAttribute="centerX" secondItem="Mkc-pW-McV" secondAttribute="centerX" id="JbJ-34-xao"/>
+                            <constraint firstItem="5rI-mT-BRD" firstAttribute="top" secondItem="M6O-s6-93N" secondAttribute="top" id="Ode-4a-w0k"/>
+                            <constraint firstItem="5rI-mT-BRD" firstAttribute="leading" secondItem="M6O-s6-93N" secondAttribute="leading" id="SFO-6P-eDv"/>
+                            <constraint firstItem="5rI-mT-BRD" firstAttribute="bottom" secondItem="M6O-s6-93N" secondAttribute="bottom" id="at3-ky-lKC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ana Sayfa" image="homekit" catalog="system" id="0py-hb-vb7"/>
+                    <connections>
+                        <outlet property="feedTableView" destination="5rI-mT-BRD" id="Yon-dV-jYK"/>
+                        <segue destination="fuU-sP-59u" kind="show" identifier="toSnapVC" id="lvm-Dj-uIk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PK1-ba-S6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9.9236641221374047" y="741.54929577464793"/>
+        </scene>
+        <!--Snap View Controller-->
+        <scene sceneID="0Xe-Vg-qwY">
+            <objects>
+                <viewController id="fuU-sP-59u" customClass="snapViewController" customModule="snapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nbq-gK-reE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Kalan Süre:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmW-BI-xuH">
+                                <rect key="frame" x="16" y="66" width="361" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hng-JI-p6Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zmW-BI-xuH" firstAttribute="leading" secondItem="Nbq-gK-reE" secondAttribute="leadingMargin" id="Akh-e9-7DU"/>
+                            <constraint firstItem="zmW-BI-xuH" firstAttribute="top" secondItem="Hng-JI-p6Q" secondAttribute="top" constant="66" id="KIb-ut-fvM"/>
+                            <constraint firstItem="Hng-JI-p6Q" firstAttribute="bottom" secondItem="zmW-BI-xuH" secondAttribute="bottom" constant="641" id="ZxM-dB-wdl"/>
+                            <constraint firstItem="zmW-BI-xuH" firstAttribute="trailing" secondItem="Nbq-gK-reE" secondAttribute="trailingMargin" id="hlp-93-xDe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tuH-8I-Xpo"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="zmW-BI-xuH" id="t4h-Ax-LJB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tr8-OT-nbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-741.22137404580144" y="740.84507042253529"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GMN-YS-WTF">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBar" id="fQD-9G-nXS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="acs-WK-vr2"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eky-83-KQf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YHF-h6-IAe" kind="relationship" relationship="viewControllers" id="nHB-iC-a8Z"/>
+                        <segue destination="jiJ-mt-8GN" kind="relationship" relationship="viewControllers" id="h3o-Y5-rHE"/>
+                        <segue destination="cxY-bK-NRo" kind="relationship" relationship="viewControllers" id="mBg-20-ViW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XA7-c0-Zyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="600" height="1000"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
